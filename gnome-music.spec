@@ -1,11 +1,11 @@
 Summary:	Music player for GNOME
 Name:		gnome-music
-Version:	3.10.3
+Version:	3.12.0
 Release:	1
 License:	GPL v2 with exceptions
 Group:		X11/Applications/Multimedia
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-music/3.10/%{name}-%{version}.tar.xz
-# Source0-md5:	5fa22fb33c6f24eaecbda5da6da90765
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-music/3.12/%{name}-%{version}.tar.xz
+# Source0-md5:	85e71341fc8dce40149c03ca82d067ad
 URL:		http://wiki.gnome.org/Apps/Music
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__rm} $RPM_BUILD_ROOT%{_libdir}/gnome-music/*.la
 
-%find_lang %{name}
+%find_lang %{name} --with-gnome
 
 %clean
 rm -rf $RPM_BUILD_ROOT
