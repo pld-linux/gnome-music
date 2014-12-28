@@ -9,7 +9,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-music/3.14/%{name}-%{versi
 URL:		http://wiki.gnome.org/Apps/Music
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gobject-introspection-devel >= 1.36.0
 BuildRequires:	grilo-devel >= 0.2.6
 BuildRequires:	gtk+3-devel >= 3.14.0
