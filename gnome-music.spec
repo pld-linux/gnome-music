@@ -1,11 +1,11 @@
 Summary:	Music player for GNOME
 Name:		gnome-music
-Version:	3.14.2
+Version:	3.14.3.1
 Release:	1
 License:	GPL v2 with exceptions
 Group:		X11/Applications/Multimedia
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-music/3.14/%{name}-%{version}.tar.xz
-# Source0-md5:	8bd303572780ae0861dddb00033f5a55
+# Source0-md5:	5e313a1c201fd9c4dca02ebe7b80c347
 URL:		http://wiki.gnome.org/Apps/Music
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
