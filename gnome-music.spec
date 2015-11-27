@@ -1,12 +1,12 @@
 Summary:	Music player for GNOME
 Summary(pl.UTF-8):	Odtwarzacz muzyki dla GNOME
 Name:		gnome-music
-Version:	3.18.0
+Version:	3.18.2
 Release:	1
 License:	GPL v2 with exceptions
 Group:		X11/Applications/Multimedia
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-music/3.18/%{name}-%{version}.tar.xz
-# Source0-md5:	7112e902d707e276e889e90d062bb1ee
+# Source0-md5:	644980dc5c917e497023d6056532d3fd
 URL:		http://wiki.gnome.org/Apps/Music
 BuildRequires:	autoconf >= 2.63
 BuildRequires:	automake >= 1:1.11
