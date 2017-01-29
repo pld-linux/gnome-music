@@ -29,7 +29,8 @@ Requires(post,postun):	glib2 >= 1:2.26.0
 Requires(post,postun):	gtk-update-icon-cache
 Requires:	gdk-pixbuf2
 Requires:	glib2
-Requires:	grilo-plugins
+Requires:	grilo >= 0.3.1
+Requires:	grilo-plugins >= 0.3.1
 Requires:	gstreamer >= 1.0.0
 Requires:	gstreamer-plugins-base >= 1.0.0
 Requires:	gtk+3 >= 3.20.0
@@ -62,6 +63,7 @@ GNOME Music to odtwarzacz muzyki dla GNOME.
 %{__autoheader}
 %{__automake}
 %configure \
+	am_cv_python_pythondir=%{py3_sitescriptdir} \
 	--disable-silent-rules
 
 %{__make}
