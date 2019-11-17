@@ -1,0 +1,10 @@
+--- gnome-music-3.34.1/meson.build.orig	2019-10-25 17:59:21.000000000 +0200
++++ gnome-music-3.34.1/meson.build	2019-11-17 21:12:14.293499427 +0100
+@@ -46,7 +46,6 @@
+ dependency('pygobject-3.0', version: '>= 3.29.1')
+ dependency('py3cairo', version: '>= 1.14.0')
+ dependency('grilo-0.3', version: '>= 0.3.9')
+-dependency('grilo-plugins-0.3', version: '>= 0.3.9')
+ 
+ subproject('libgd',
+     default_options: [
