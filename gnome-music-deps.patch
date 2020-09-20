@@ -1,10 +1,10 @@
---- gnome-music-3.36.1/meson.build.orig	2020-04-17 21:15:28.884378321 +0200
-+++ gnome-music-3.36.1/meson.build	2020-04-17 21:21:38.415709731 +0200
-@@ -46,7 +46,6 @@
- dependency('pygobject-3.0', version: '>= 3.29.1')
+--- gnome-music-3.38.0/meson.build.orig	2020-09-20 18:42:10.570731113 +0200
++++ gnome-music-3.38.0/meson.build	2020-09-20 19:12:35.460844835 +0200
+@@ -47,7 +47,6 @@
+ dependency('pygobject-3.0', version: '>= 3.36.1')
  dependency('py3cairo', version: '>= 1.14.0')
- dependency('grilo-0.3', version: '>= 0.3.12', fallback: ['grilo', 'libgrl_dep'])
--dependency('grilo-plugins-0.3', version: '>= 0.3.10', fallback: ['grilo-plugins', 'grilo_plugins_dep'])
+ dependency('grilo-0.3', version: '>= 0.3.13', fallback: ['grilo', 'libgrl_dep'])
+-dependency('grilo-plugins-0.3', version: '>= 0.3.12', fallback: ['grilo-plugins', 'grilo_plugins_dep'])
  
  subproject('libgd',
      default_options: [
