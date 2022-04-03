@@ -8,6 +8,7 @@ Group:		X11/Applications/Multimedia
 Source0:	https://download.gnome.org/sources/gnome-music/41/%{name}-%{version}.tar.xz
 # Source0-md5:	db3228b6ce214e98740229b13e2dd4f8
 Patch0:		%{name}-deps.patch
+Patch1:		meson0.60.patch
 URL:		https://wiki.gnome.org/Apps/Music
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.67.1
@@ -65,6 +66,7 @@ GNOME Music to odtwarzacz muzyki dla GNOME.
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 %{__sed} -i -e '1s,/usr/bin/env python3,%{__python3},' gnome-music.in
 
@@ -107,4 +109,4 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/org.gnome.Music.desktop
 %{_iconsdir}/hicolor/symbolic/apps/org.gnome.Music-symbolic.svg
 %{_iconsdir}/hicolor/scalable/apps/org.gnome.Music.svg
-%{py3_sitedir}/gnomemusic
+%{py3_sitescriptdir}/gnomemusic
