@@ -1,14 +1,14 @@
 Summary:	Music player for GNOME
 Summary(pl.UTF-8):	Odtwarzacz muzyki dla GNOME
 Name:		gnome-music
-Version:	41.0
-Release:	4
+Version:	42.0
+Release:	1
 License:	GPL v2 with GStreamer plugins exceptions
 Group:		X11/Applications/Multimedia
-Source0:	https://download.gnome.org/sources/gnome-music/41/%{name}-%{version}.tar.xz
-# Source0-md5:	db3228b6ce214e98740229b13e2dd4f8
+Source0:	https://download.gnome.org/sources/gnome-music/42/%{name}-%{version}.tar.xz
+# Source0-md5:	828b916cefa2d964e55bc88049754a7a
 Patch0:		%{name}-deps.patch
-Patch1:		meson0.60.patch
+Patch1:		%{name}-no-update.patch
 URL:		https://wiki.gnome.org/Apps/Music
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.67.1
@@ -97,12 +97,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc LICENSE NEWS README.md
 %attr(755,root,root) %{_bindir}/gnome-music
-%dir %{_libdir}/org.gnome.Music
-%attr(755,root,root) %{_libdir}/org.gnome.Music/libgfm-0.1.so
-%dir %{_libdir}/org.gnome.Music/girepository-1.0
-%{_libdir}/org.gnome.Music/girepository-1.0/Gfm-0.1.typelib
-%dir %{_libdir}/org.gnome.Music/pkgconfig
-%{_libdir}/org.gnome.Music/pkgconfig/gfm-0.1.pc
 %{_datadir}/glib-2.0/schemas/org.gnome.Music.gschema.xml
 %{_datadir}/metainfo/org.gnome.Music.appdata.xml
 %{_datadir}/org.gnome.Music
