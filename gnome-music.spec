@@ -1,12 +1,12 @@
 Summary:	Music player for GNOME
 Summary(pl.UTF-8):	Odtwarzacz muzyki dla GNOME
 Name:		gnome-music
-Version:	42.1
+Version:	44.0
 Release:	1
 License:	GPL v2 with GStreamer plugins exceptions
 Group:		X11/Applications/Multimedia
-Source0:	https://download.gnome.org/sources/gnome-music/42/%{name}-%{version}.tar.xz
-# Source0-md5:	c441f8ecbb1b4c36598af04c28c743b6
+Source0:	https://download.gnome.org/sources/gnome-music/44/%{name}-%{version}.tar.xz
+# Source0-md5:	cf047cff4ddf437d14131aa06bb12229
 Patch0:		%{name}-deps.patch
 Patch1:		%{name}-no-update.patch
 URL:		https://wiki.gnome.org/Apps/Music
@@ -15,12 +15,11 @@ BuildRequires:	glib2-devel >= 1:2.67.1
 BuildRequires:	gnome-online-accounts-devel >= 3.36.0
 BuildRequires:	gobject-introspection-devel >= 1.36.0
 BuildRequires:	grilo-devel >= 0.3.13
-BuildRequires:	gtk+3-devel >= 3.24.14
-BuildRequires:	libdazzle-devel >= 3.28.0
-BuildRequires:	libhandy1-devel >= 1.2.0
+BuildRequires:	gtk4-devel >= 4.5.0
+BuildRequires:	libadwaita-devel >= 1.2
 BuildRequires:	libmediaart2-devel >= 1.9.1
-BuildRequires:	libsoup-devel >= 2.4
-BuildRequires:	meson >= 0.49.0
+BuildRequires:	libsoup3-devel >= 3.0
+BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pango-devel >= 1:1.44.0
 BuildRequires:	pkgconfig >= 1:0.22
@@ -43,10 +42,9 @@ Requires:	grilo >= 0.3.13
 Requires:	grilo-plugins >= 0.3.12
 Requires:	gstreamer >= 1.0.0
 Requires:	gstreamer-plugins-base >= 1.0.0
-Requires:	gtk+3 >= 3.24.14
+Requires:	gtk4 >= 4.5.0
 Requires:	hicolor-icon-theme
-Requires:	libdazzle >= 3.28.0
-Requires:	libhandy1 >= 1.2.0
+Requires:	libadwaita >= 1.2
 Requires:	libmediaart2 >= 1.9.1
 Requires:	libnotify
 Requires:	pango >= 1:1.44.0
