@@ -1,15 +1,15 @@
 Summary:	Music player for GNOME
 Summary(pl.UTF-8):	Odtwarzacz muzyki dla GNOME
 Name:		gnome-music
-Version:	46.1
+Version:	47.0
 Release:	1
 License:	GPL v2 with GStreamer plugins exceptions
 Group:		X11/Applications/Multimedia
-Source0:	https://download.gnome.org/sources/gnome-music/46/%{name}-%{version}.tar.xz
-# Source0-md5:	b3a451870f55b4540bf9253a5bf1d03f
+Source0:	https://download.gnome.org/sources/gnome-music/47/%{name}-%{version}.tar.xz
+# Source0-md5:	1ab21b2d026f25ef54332992f36dd55a
 Patch0:		%{name}-deps.patch
 Patch1:		%{name}-no-update.patch
-URL:		https://wiki.gnome.org/Apps/Music
+URL:		https://apps.gnome.org/Music/
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.67.1
 BuildRequires:	gnome-online-accounts-devel >= 3.36.0
