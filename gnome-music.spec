@@ -26,7 +26,7 @@ BuildRequires:	pkgconfig >= 1:0.22
 BuildRequires:	python3-devel >= 1:3.7
 BuildRequires:	python3-pycairo-devel >= 1.14.0
 BuildRequires:	python3-pygobject3-devel >= 3.47.0
-BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	sed >= 4.0
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	tracker3-devel >= 3.0.0
@@ -70,14 +70,14 @@ GNOME Music to odtwarzacz muzyki dla GNOME.
 %{__sed} -i -e '1s,/usr/bin/env python3,%{__python3},' gnome-music.in
 
 %build
-%meson build
+%meson
 
-%ninja_build -C build
+%meson_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%ninja_install -C build
+%meson_install
 
 %find_lang org.gnome.Music --with-gnome --all-name
 
