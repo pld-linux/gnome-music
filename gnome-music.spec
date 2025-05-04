@@ -1,12 +1,12 @@
 Summary:	Music player for GNOME
 Summary(pl.UTF-8):	Odtwarzacz muzyki dla GNOME
 Name:		gnome-music
-Version:	47.1
-Release:	4
+Version:	48.0
+Release:	1
 License:	GPL v2 with GStreamer plugins exceptions
 Group:		X11/Applications/Multimedia
-Source0:	https://download.gnome.org/sources/gnome-music/47/%{name}-%{version}.tar.xz
-# Source0-md5:	a0fb61a60e2c67e21e1a69b8183ac155
+Source0:	https://download.gnome.org/sources/gnome-music/48/%{name}-%{version}.tar.xz
+# Source0-md5:	f865177a2718d3159d62e84f74bd5e21
 Patch0:		%{name}-deps.patch
 Patch1:		%{name}-no-update.patch
 URL:		https://apps.gnome.org/Music/
@@ -15,17 +15,17 @@ BuildRequires:	glib2-devel >= 1:2.67.1
 BuildRequires:	gnome-online-accounts-devel >= 3.36.0
 BuildRequires:	gobject-introspection-devel >= 1.36.0
 BuildRequires:	grilo-devel >= 0.3.13
-BuildRequires:	gtk4-devel >= 4.10.0
-BuildRequires:	libadwaita-devel >= 1.5
+BuildRequires:	gtk4-devel >= 4.16.0
+BuildRequires:	libadwaita-devel >= 1.6
 BuildRequires:	libmediaart2-devel >= 1.9.1
 BuildRequires:	libsoup3-devel >= 3.0
 BuildRequires:	meson >= 0.59.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pango-devel >= 1:1.44.0
 BuildRequires:	pkgconfig >= 1:0.22
-BuildRequires:	python3-devel >= 1:3.7
+BuildRequires:	python3-devel >= 1:3.8
 BuildRequires:	python3-pycairo-devel >= 1.14.0
-BuildRequires:	python3-pygobject3-devel >= 3.47.0
+BuildRequires:	python3-pygobject3-devel >= 3.50.0
 BuildRequires:	rpmbuild(macros) >= 2.042
 BuildRequires:	sed >= 4.0
 BuildRequires:	tar >= 1:1.22
@@ -42,15 +42,15 @@ Requires:	grilo >= 0.3.13
 Requires:	grilo-plugins >= 0.3.12
 Requires:	gstreamer >= 1.0.0
 Requires:	gstreamer-plugins-base >= 1.0.0
-Requires:	gtk4 >= 4.10.0
+Requires:	gtk4 >= 4.16.0
 Requires:	hicolor-icon-theme
-Requires:	libadwaita >= 1.5
+Requires:	libadwaita >= 1.6
 Requires:	libmediaart2 >= 1.9.1
 Requires:	libnotify
 Requires:	pango >= 1:1.44.0
 Requires:	python3-dbus
 Requires:	python3-pycairo >= 1.14.0
-Requires:	python3-pygobject3 >= 3.47.0
+Requires:	python3-pygobject3 >= 3.50.0
 Requires:	python3-requests
 Requires:	tracker3-libs >= 3.0.0
 BuildArch:	noarch
@@ -97,7 +97,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc LICENSE NEWS README.md
 %attr(755,root,root) %{_bindir}/gnome-music
 %{_datadir}/glib-2.0/schemas/org.gnome.Music.gschema.xml
-%{_datadir}/metainfo/org.gnome.Music.appdata.xml
+%{_datadir}/metainfo/org.gnome.Music.metainfo.xml
 %{_datadir}/org.gnome.Music
 %{_desktopdir}/org.gnome.Music.desktop
 %{_iconsdir}/hicolor/symbolic/apps/org.gnome.Music-symbolic.svg

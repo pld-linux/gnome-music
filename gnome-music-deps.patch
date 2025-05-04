@@ -1,7 +1,7 @@
---- gnome-music-46.0/meson.build.orig	2024-05-09 06:16:12.154721947 +0200
-+++ gnome-music-46.0/meson.build	2024-05-09 06:24:02.562469239 +0200
+--- gnome-music-48.0/meson.build.orig	2025-05-01 21:55:39.000000000 +0200
++++ gnome-music-48.0/meson.build	2025-05-04 19:20:23.207788124 +0200
 @@ -65,7 +65,6 @@ dependency('pango', version: '>= 1.44.0'
- dependency('pygobject-3.0', version: '>= 3.47.0')
+ dependency('pygobject-3.0', version: '>= 3.50.0')
  dependency('py3cairo', version: '>= 1.14.0')
  dependency('grilo-0.3', version: '>= 0.3.13', fallback: ['grilo', 'libgrl_dep'])
 -dependency('grilo-plugins-0.3', version: '>= 0.3.12', fallback: ['grilo-plugins', 'grilo_plugins_dep'])
